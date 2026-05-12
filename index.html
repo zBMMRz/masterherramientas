@@ -1,3 +1,5 @@
+Este fuerza el botón AR:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,11 +18,29 @@ src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
 
 ar
 ar-modes="scene-viewer webxr quick-look"
+ar-scale="fixed"
 
 camera-controls
 auto-rotate
 
-style="width:100vw; height:100vh;">
+style="width:100vw;height:100vh;">
+
+<button slot="ar-button"
+style="
+background:black;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+position:absolute;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+">
+
+Ver en AR
+
+</button>
 
 </model-viewer>
 
